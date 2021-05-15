@@ -43,22 +43,13 @@ dataset = pd.DataFrame(list(data.find()))
 print(dataset)
 
 
-df =dataset.drop("_id",axis ="columns")
-print(df)
 
 
-#df after droping id column
-
-    
-
-#importing the dataset
-
-#dataset = pd.read_csv('E:/Student csv file/student_info.csv')
 
 #Discover and visualize the data to gain insights
-print(df.describe())
-print(df.info())
-print(df.mean())
+print(dataset.describe())
+print(dataset.info())
+print(dataset.mean())
 
 plt.scatter(x=dataset.study_hours, y=dataset.student_marks)
 plt.xlabel("Students Study Hours")
